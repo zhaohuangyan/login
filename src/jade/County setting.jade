@@ -1,0 +1,51 @@
+extends templates/pms
+
+block vars
+
+block title
+  |区县设置
+
+block styles
+
+block content
+    body.login-bjs
+        div.row
+            div.col-sm-6
+                h3.login-address 区县查询
+            div.col-sm-6.login-Page
+                a(href="") 帮助
+            div.col-sm-12
+                hr
+        div.row
+            div.col-sm-9
+                form.form-inline
+                    lable 省份:
+                    select.login-layoutss
+                        option 全部
+                    lable 城市:
+                    select.login-layoutss
+                        option 全部
+                    lable 区县名称
+                    input(type="text" class="form-control").login-shuru
+            div.col-sm-3.login-Page
+                form.form-inline
+                    lable 停用标志 
+                    select.login-layoutss
+                        option 全部
+                    button(type="button").btn.btn-default.login-btn 查询(Q)
+        div.row
+            div.col-sm-6
+                form.form-inline
+                    div.form-group
+                        a(href="") 区县模板设置模板.xls">区县模板
+                        div.input-group
+                            div.input-group-addon.login-choice 选择文件
+                            input.login-select(type="text" class="form-control" placeholder="未选择任何文件")
+            div.col-sm-6
+                form.form-inline
+                    button(type="button").btn.btn-default.login-btn 导入(I)
+                    button(type="button").btn.btn-default.login-btn 新增(N)
+                    button(type="button").btn.btn-default.login-btn 导出(O)
+                    button(type="button").btn.btn-default.login-btn 停用(P)
+                    button(type="button").btn.btn-default.login-btn 开通揽件
+                    button(type="button").btn.btn-default.login-btn 取消揽件

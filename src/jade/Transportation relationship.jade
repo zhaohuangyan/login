@@ -21,61 +21,118 @@ block content
             div.col-sm-6
                 table
                     tr
-                        td(rowspan="3")
+                        td
                             |发货地:
                         td
-                            input(type="radio" name="fahuo")
-                            |分拣中心
-                        td
-                            select
-                                option 请选择
+                            table
+                                tr
+                                    td
+                                        input(type="radio" name="fahuo")
+                                        &nbsp;
+                                        |分拣中心
+                                        &nbsp;
+                                    td
+                                        select.form-control
+                                            option 请选择
+                                tr
+                                    td
+                                        input(type="radio" name="fahuo")
+                                        &nbsp;
+                                        |配送商
+                                        &nbsp;
+                                    td
+                                        select.form-control
+                                            option 请选择
+                                    td
+                                        select.form-control
+                                            option 请选择
+                                tr
+                                    td
+                                        &nbsp;
+                                        br
+                                tr
+                                    td
+                                        &nbsp;
+                                        br
                     tr
                         td
-                            input(type="radio" name="fahuo")
-                            |配送商
+                            |是否城际:
+                            &nbsp;
                         td
-                            select
-                                option 请选择
-                        td
-                        td
-                            select
-                                option 请选择
-                    tr
+                            input(type="radio" name="chengji")
+                            &nbsp;
+                            |是
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            input(type="radio" name="chengji")
+                            &nbsp;
+                            |否
+                br
+                form.form-inline
+                    div.form-group
+                        a(href="") 下载模板
+                        div.input-group
+                            div.input-group-addon.login-choice 选择文件
+                            input.login-select(type="text" class="form-control" placeholder="未选择任何文件")
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        button(class="btn btn-default login-btn" type="button")
+                            |上传
             div.col-sm-6
                 table
                     tr
-                        td(rowspan="3")
+                        td
                             |运输目的地:
+                            &nbsp;&nbsp;
                         td
-                            input(type="radio" name="fahuo")
-                            |配送商
-                        td
-                            select.login-layoutss
-                                option 请选择
-                        td
-                            select.login-layoutss
-                                option 请选择
+                            table
+                                tr
+                                    td
+                                        input(type="radio" name="yunshu")
+                                        &nbsp;
+                                        |配送商
+                                        &nbsp;
+                                    td
+                                        select.form-control
+                                            option 请选择
+                                    td
+                                        select.form-control
+                                            option 请选择
+                                tr
+                                    td
+                                        input(type="radio" name="yunshu")
+                                        &nbsp;
+                                        |分拣中心
+                                        &nbsp;
+                                    td
+                                        select.form-control
+                                            option 请选择 
+                                tr
+                                    td
+                                        input(type="radio" name="yunshu")
+                                        &nbsp;
+                                        |站点
+                                    td
+                                        select.form-control
+                                            option 请选择 
                     tr
                         td
-                            input(type="radio" name="fahuo")
-                            |分拣中心
+                            |是否停用:
                         td
-                            select.login-layoutss
-                                option 请选择 
-                        td
-                    tr
-                        td
-                            input(type="radio" name="fahuo")
-                            |站点
-                        td
-                            select.login-layoutss
-                                option 请选择 
-                        td
-        div.table-responsive
+                            input(type="radio" name="tingyong")
+                            &nbsp;
+                            |启用 
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            input(type="radio" name="tingyong")
+                            &nbsp;
+                            |停用
+                br
+                button(class="btn btn-default login-btn" type="button")查询(Q)
+                button(class="btn btn-default login-btn" type="button")新增(N)
+                button(class="btn btn-default login-btn" type="button")导出(E)
+        div.table-responsive.login-top
             table.table.table-bordered
                 tr.active
                     td
-                        input(type="chebox")
+                        input(type="checkbox")
                     td
                         |序号
                     td
@@ -90,3 +147,159 @@ block content
                         |启用状态   
                     td
                         |修改
+                tr.warning
+                    td
+                        input(type="checkbox")
+                    td
+                        |1
+                    td
+                        |成都分拣中心
+                    td
+                        |成都青羊站
+                    td
+                        |如风达快递有限公司
+                    td
+                        |否
+                    td
+                        |停用   
+                    td
+                        a(href="")修改
+                tr.success
+                    td
+                        input(type="checkbox")
+                    td
+                        |1
+                    td
+                        |成都分拣中心
+                    td
+                        |成都青羊站
+                    td
+                        |如风达快递有限公司
+                    td
+                        |否
+                    td
+                        |停用   
+                    td
+                        a(href="")修改
+                tr.warning
+                    td
+                        input(type="checkbox")
+                    td
+                        |1
+                    td
+                        |成都分拣中心
+                    td
+                        |成都青羊站
+                    td
+                        |如风达快递有限公司
+                    td
+                        |否
+                    td
+                        |停用   
+                    td
+                        a(href="")修改
+                tr.success
+                    td
+                        input(type="checkbox")
+                    td
+                        |1
+                    td
+                        |成都分拣中心
+                    td
+                        |成都青羊站
+                    td
+                        |如风达快递有限公司
+                    td
+                        |否
+                    td
+                        |停用   
+                    td
+                        a(href="")修改
+                tr.warning
+                    td
+                        input(type="checkbox")
+                    td
+                        |1
+                    td
+                        |成都分拣中心
+                    td
+                        |成都青羊站
+                    td
+                        |如风达快递有限公司
+                    td
+                        |否
+                    td
+                        |停用   
+                    td
+                        a(href="")修改
+                tr.success
+                    td
+                        input(type="checkbox")
+                    td
+                        |1
+                    td
+                        |成都分拣中心
+                    td
+                        |成都青羊站
+                    td
+                        |如风达快递有限公司
+                    td
+                        |否
+                    td
+                        |停用   
+                    td
+                        a(href="")修改
+                tr.warning
+                    td
+                        input(type="checkbox")
+                    td
+                        |1
+                    td
+                        |成都分拣中心
+                    td
+                        |成都青羊站
+                    td
+                        |如风达快递有限公司
+                    td
+                        |否
+                    td
+                        |停用   
+                    td
+                        a(href="")修改
+                tr.success
+                    td
+                        input(type="checkbox")
+                    td
+                        |1
+                    td
+                        |成都分拣中心
+                    td
+                        |成都青羊站
+                    td
+                        |如风达快递有限公司
+                    td
+                        |否
+                    td
+                        |停用   
+                    td
+                        a(href="")修改
+        div.col-sm-6
+            span
+                共找到1646条记录
+        div.col-sm-6.login-Page
+            div
+                span.login-numbers
+                    首页
+                span.login-numbers
+                    前页
+                span.login-numberss
+                    |1
+                span.login-numbers
+                    后页
+                span.login-numbers
+                    尾页
+                span
+                    转到第
+                    select
+                        option 1
+                    |页 
