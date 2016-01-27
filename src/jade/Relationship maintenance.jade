@@ -1,0 +1,35 @@
+extends templates/pms
+
+block vars
+
+block title
+  |区域站点关系维护
+
+block styles
+
+block content
+    body.login-bjs
+        h2.login-address 区域站点关系设置
+            small (配送商：如风达快递有限公司)
+        hr
+        h3 设定站点:
+        form.form-inline
+            省&nbsp;&nbsp;&nbsp;&nbsp;份:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+            select.login-layoutss
+                option 请选择
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            配送商:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            站&nbsp;&nbsp;&nbsp;&nbsp;点:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+        form.form-inline.login-top
+            button(class="btn btn-default login-btn" type="button")添加
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            button(class="btn btn-default login-btn" type="button")查询

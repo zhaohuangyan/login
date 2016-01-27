@@ -1,0 +1,157 @@
+extends templates/pms
+
+block vars
+
+block title
+  |配送商流程定义
+
+block styles
+
+block content
+    body.login-bjs
+        h2.login-address 配送商流程定义
+        hr
+        form.form-inline
+            lable 配&nbsp;&nbsp;送&nbsp;&nbsp;商:
+                select.login-layoutss
+                    option 请选择  
+                input(type="checkbox")
+                &nbsp;
+                |待生效流程
+                &nbsp;&nbsp;
+                button(type="button").btn.btn-default.login-btn 查询
+        form.form-inline
+            div.form-group
+                lable 流程名称:
+                input(type="text" class="form-control").login-shuru
+                &nbsp;&nbsp;
+                lable 生效时间:
+                input(type="text" class="form-control").login-shuru
+                &nbsp;&nbsp;
+                input(type="checkbox")
+                &nbsp;
+                |立即生效
+                &nbsp;&nbsp;
+                button(type="button").btn.btn-default.login-btn 保存
+        div.login-top
+            fieldset.login-field
+                legend 信息导入
+                dl
+                    dd
+                        input(type="checkbox" checked="checked" disabled)
+                        &nbsp;
+                        |订单导入
+                    dd
+                        button(type="button").btn.btn-default.login-btn.login-top 编辑
+            fieldset.login-field
+                legend 订单分配
+                dl
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |分配配送公司
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |分配站点
+                    dd
+                        button(type="button").btn.btn-default.login-btn.login-top 编辑
+            fieldset.login-field
+                legend 订单分拣
+                input(type="checkbox" checked="checked" disabled)
+                &nbsp;
+                |入库(必选)
+                dl 
+                    dt
+                        | 装箱
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |运单装箱(配送站)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |运单装箱(配送商)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |运单装箱(分拣中心)
+                    dt
+                        | 出库(必选)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |出库(站点)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |出库(分拣)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |出库(配送商)
+                    dt
+                        input(type="checkbox")
+                        &nbsp;
+                        |装车
+                    dt
+                        button(type="button").btn.btn-default.login-btn.login-top 编辑
+            fieldset.login-field
+                legend 落地配
+                input(type="checkbox")
+                &nbsp;
+                |卸车
+                br
+                input(type="checkbox")
+                &nbsp;
+                |入站
+                dl 
+                    dt
+                        | 出站
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |出站(分配配送员)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |出站(转到站点)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |出站(转到分拣)
+                    dt
+                        |归班
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |归班(妥投)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |归班(拒收)
+                    dd
+                        input(type="checkbox")
+                        &nbsp;
+                        |归班(滞留)
+                    dt
+                        button(type="button").btn.btn-default.login-btn.login-top 编辑
+            fieldset.login-field
+                legend 订单返库
+                input(type="checkbox")
+                &nbsp;
+                |返货入站
+                br
+                input(type="checkbox")
+                &nbsp;
+                |返货出站
+                br
+                input(type="checkbox")
+                &nbsp;
+                |返货入库
+                br
+                input(type="checkbox")
+                &nbsp;
+                |返货出库
+                br
+                button(type="button").btn.btn-default.login-btn.login-top 编辑

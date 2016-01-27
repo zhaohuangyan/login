@@ -1,0 +1,62 @@
+extends templates/pms
+
+block vars
+
+block title
+  |入站投递率分析
+
+block styles
+
+block content
+    body.gray-bg.login-bj
+        form.form-inline
+            div.form-group.login-layout
+                input(type="date" class="form-control")
+                button(type="button" class="form-control")
+                    |to
+                input(type="date" class="form-control")
+            select.login-layout.login-layouts
+                option 未选中任何商家
+            select.form-control.login-layout
+                option 选择时效标准...
+        form.form-inline
+            select.login-layoutss
+                option 大区
+                option
+            select.login-layoutss
+                option 省
+            select.login-layoutss
+                option 市
+            select.login-layoutss
+                option 全部
+            select.login-layoutss
+                option 配送站
+        form.form-inline
+            select.form-control.login-layout
+                option 全部
+                option 普通订单
+                option 上门换货单
+                option 上门退货单
+                option 签单返回订单
+        form.form-inline
+            i.fa.fa-search.login-search.login-layout
+            span.login-search  个性化设置 &nbsp;&nbsp;
+                i.fa.fa-cog
+        div.row.login-order
+            div.col-sm-12
+                div.ibox.float-e-margins
+                    h4 商家分类日趋势
+                    div.pull-right
+                        div.btn-group
+                            button(type="button" class="btn btn-xs btn-white active")
+                                |天
+                            button(type="button" class="btn btn-xs btn-white")
+                                |月
+                            button(type="button" class="btn btn-xs btn-white")
+                                |年
+                            i.fa.fa-file-excel-o.login-search &nbsp;&nbsp;明细导出
+                    div.ibox-content
+                        div.row
+                            div.col-sm-12
+                                div.flot-chart
+                                    div.flot-chart-content#flot-dashboard-chart

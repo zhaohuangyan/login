@@ -1,0 +1,46 @@
+extends templates/pms
+
+block vars
+
+block title
+  |关键字经纬度维护
+
+block styles
+
+block content
+    body.login-bjs
+        h2.login-address 关键字经纬度维护
+            small (配送商：如风达快递有限公司)
+        hr
+        h3 设定站点:
+        form.form-inline
+            省&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;份:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+            城&nbsp;&nbsp;&nbsp;&nbsp;市:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+            站&nbsp;&nbsp;&nbsp;&nbsp;点:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            可信值范围
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            关&nbsp;&nbsp;键&nbsp;&nbsp;字:&nbsp;&nbsp;
+            input(type="text" class="form-control login-shuru")
+        form.form-inline.login-top
+                button(class="btn btn-default login-btn" type="submit")查询
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(class="btn btn-default login-btn" type="button")导出
+        form.form-inline.login-top
+            div.from-group
+                a(href="") 下载关键字经纬度模板&nbsp;&nbsp;
+                //- button(class="btn btn-default")选择文件
+                //- &nbsp;&nbsp;未选择任何文件
+                div.input-group
+                    div.input-group-addon.login-choice  选择文件
+                    input.login-select(type="text" class="form-control" placeholder="未选择任何文件")
+                &nbsp;&nbsp;
+                button(class="btn btn-default login-btn")导出关键字经纬度

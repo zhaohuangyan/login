@@ -1,0 +1,78 @@
+extends templates/pms
+
+block vars
+
+block title
+  |人员设置
+
+block styles
+
+block content
+    body.login-bjs
+        div.row
+            div.col-sm-6
+                h3.login-address 员工信息查询
+            div.col-sm-6.login-Page
+                a(href="") 帮助
+        div.row
+            div.col-sm-12
+                hr
+        form.form-inline
+            div.form-group
+                lable 员工编号
+                textarea(class="form-control" rows="2" cols="10")
+                lable 员工名称
+                input(type="text" class="form-control").login-shuru
+                lable 岗位名称
+                input(type="text" class="form-control").login-shuru
+                lable 部门
+                input(type="text" class="form-control").login-shuru
+                &nbsp;&nbsp;
+                i.fa.fa-search
+                &nbsp;&nbsp;
+                i.fa.fa-mail-forward 
+        form.form-inline.login-top
+            div.form-group
+                input(type="checkbox")
+                |正常 
+                &nbsp;&nbsp;
+                input(type="checkbox")
+                |已停用
+                &nbsp;&nbsp;
+                button(type="button").btn.btn-default.login-btn 查询(Q)
+        form.form-inline.login-top
+            div.form-group
+                a(href="") 下载模板
+                div.input-group
+                    div.input-group-addon.login-choice 选择文件
+                    input.login-select(type="text" class="form-control" placeholder="未选择任何文件")
+        form.form-inline.login-top
+            div.form-group
+                button(type="button" class="btn btn-default login-btn")导入(I)
+                button(type="button" class="btn btn-default login-btn")新增(N)
+                button(type="button" class="btn btn-default login-btn")初始化密码
+                button(type="button" class="btn btn-default login-btn")批量导出(E)
+                button(type="button" class="btn btn-default login-btn")启用(U)
+                button(type="button" class="btn btn-default login-btn")停用(P)
+                button(type="button" class="btn btn-default login-btn")允许登陆
+                button(type="button" class="btn btn-default login-btn")禁止登陆
+        div.col-sm-6
+            span.login-fixed
+                共找到1646条记录
+        div.col-sm-6.login-Page
+            div.login-fixed
+                span.login-numbers
+                    首页
+                span.login-numbers
+                    前页
+                span.login-numberss
+                    |1
+                span.login-numbers
+                    后页
+                span.login-numbers
+                    尾页
+                span
+                    转到第
+                    select
+                        option 1
+                    |页 

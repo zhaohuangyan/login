@@ -1,0 +1,75 @@
+extends templates/pms
+
+block vars
+
+block title
+  |配送商地址维护
+
+block styles
+
+block content
+    body.login-bjs
+        h2.login-address 商家地址管理
+            small (配送商：如风达快递有限公司)
+        hr
+        h3 设定站点
+        form.form-inline
+            省&nbsp;&nbsp;&nbsp;&nbsp;份:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+            select.login-layoutss
+                option 请选择
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            配送商:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            站&nbsp;&nbsp;&nbsp;&nbsp;点:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            地址库:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            div.form-group
+                div.input-group
+                    div.input-group-addon.login-choice  选择文件
+                    input.login-select(type="text" class="form-control" placeholder="未选择任何文件")
+        form.form-inline.login-top
+            地&nbsp;&nbsp;&nbsp;&nbsp;址:&nbsp;&nbsp;
+            textarea(class="form-control" rows="3" cols="50")
+            br
+            div.login-top
+                button(class="btn btn-default login-btn" type="submit")
+                    |查询
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(class="btn btn-default" type="button").login-btn
+                    |删除
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(class="btn btn-default" type="button").login-btn
+                    |导出
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                input(type="checkbox")
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                |全部导出
+        div.login-top
+            div.col-sm-6
+                span 第1页，共1页，共0条记录，每页显示500条记录
+            div.col-sm-6.login-Page
+                span
+                    a(href="#") 首页
+                span
+                    a(href="#") 前页[1]
+                span
+                    a(href="#") 后页
+                span
+                    a(href="#") 尾页
+                span
+                    转到
+                    select
+                        option 1
+                        option 2
+                    |页

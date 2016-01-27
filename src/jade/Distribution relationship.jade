@@ -1,0 +1,37 @@
+extends templates/pms
+
+block vars
+
+block title
+  |配送商与商家对应关系维护
+
+block styles
+
+block content
+    body.login-bjs
+        div.row
+            div.col-sm-6
+                h3.login-address 配送商与商家对应关系维护
+            div.col-sm-6.login-Page
+                a(href="") 帮助
+        div.row
+            div.col-sm-12
+                hr
+        form.form-inline
+            lable 配送商：
+            select.login-layoutss
+                option 如风达快递有限公司
+            input(type="radio" name="inlineRadioOptions")
+            &nbsp;
+            |已设置
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            input(type="radio" name="inlineRadioOptions")
+            &nbsp;
+            |未设置
+        form.form-inline
+            div.form-group
+                button(type="button").btn.btn-default.login-btn 查询
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(type="button").btn.btn-default.login-btn 设置
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(type="button").btn.btn-default.login-btn 停用

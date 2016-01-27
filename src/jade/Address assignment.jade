@@ -1,0 +1,47 @@
+extends templates/pms
+
+block vars
+
+block title
+  |地址分配站点解析
+
+block styles
+
+block content
+    body.login-bjs
+        h2.login-address 地址分析
+        hr
+        h3 设定站点
+        form.form-inline
+            省&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;份:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+            select.login-layoutss
+                option 请选择
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            配&nbsp;&nbsp;送&nbsp;&nbsp;商:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            站&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点:&nbsp;&nbsp;
+            select.login-layoutss
+                option 请选择
+        form.form-inline
+            订单地址:&nbsp;&nbsp;
+            textarea(class="form-control" rows="3" cols="50")
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            button(class="btn btn-default login-btn")区域匹配
+        form.form-inline.login-top
+            div.form-group
+                div.input-group
+                    div.input-group-addon.login-choice  选择文件
+                    input.login-select(type="text" class="form-control" placeholder="未选择任何文件")
+        form.form-inline.login-top
+            button(type="button" class="btn btn-default login-btn")批量区域匹配
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            button(type="button" class="btn btn-default login-btn")批量城市匹配
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            input(type="checkbox")
+            |是否前置分单

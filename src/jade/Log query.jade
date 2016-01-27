@@ -1,0 +1,55 @@
+extends templates/pms
+
+block vars
+
+block title
+  |操作日志查询
+
+block styles
+
+block content
+    body.login-bjs
+        h2.login-address  操作日志查询
+        hr
+        form.form-inline
+            div.form-group
+                lable(for="exampleInputName2")时&nbsp;&nbsp;&nbsp;&nbsp;间
+                input(type="date" class="form-control").login-shuru
+                &nbsp;&nbsp;~&nbsp;&nbsp;
+                input(type="date" class="form-control").login-shuru
+        form.form-inline.login-top
+            lable(for="exampleInputName2")操作人  
+            input(type="text" class="form-control").login-shuru
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            lable(for="exampleInputName2")操作部门  
+            input(type="text" class="form-control").login-shuru
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            lable(for="exampleInputName2")操作类型
+            select.login-layoutss
+                option 请选择
+                option 新增
+        form.form-inline
+            div.form-group
+                button(type="button" class="btn btn-default login-btn") 查询
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(type="button" class="btn btn-default login-btn") 导出 
+        div.login-footer
+            div.col-sm-6
+                span
+                    共找到0条记录
+            div.col-sm-6.login-Page
+                span.login-numbers
+                    首页
+                span.login-numbers
+                    前页
+                span.login-numberss
+                    |1
+                span.login-numbers
+                    后页
+                span.login-numbers
+                    尾页
+                span
+                    转到第
+                    select
+                        option 1
+                    |页

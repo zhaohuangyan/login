@@ -1,0 +1,288 @@
+extends templates/pms
+
+block vars
+
+block title
+  |订单来源分析
+
+block styles
+
+block content
+    div.login-bj
+        form.form-inline.login-order
+            div.form-group
+                input(type="date" class="form-control")
+                button(type="button" class="form-control")
+                    |to
+                input(type="date" class="form-control")
+                select.form-control#province_Select
+                    option 全部
+                select.form-control#Province_city
+                    option 全部
+                select.form-control#Province_Area
+                    option 全部
+                br
+                select.form-control
+                    option 未选中任何商家
+                i.fa.fa-search.login-search
+        div
+            i.fa.fa-file-excel-o.login-search&nbsp;&nbsp;
+                |数据导出
+            i.fa.fa-file-excel-o.login-search&nbsp;&nbsp;
+                |明细导出
+        div.row.login-order
+            div.col-sm-12
+                div.ibox.float-e-margins
+                    h4 商家分类日趋势
+                    div.pull-right
+                        div.btn-group
+                            button(type="button" class="btn btn-xs btn-white active")
+                                |天
+                            button(type="button" class="btn btn-xs btn-white")
+                                |月
+                            button(type="button" class="btn btn-xs btn-white")
+                                |年
+                    div.ibox-content
+                        div.row
+                            div.col-sm-12
+                                div.flot-chart
+                                    div.flot-chart-content#flot-dashboard-chart
+                        div.row
+                            div.col-sm-4
+                                ul.stat-list
+                                    li.login-list
+                                        i.fa.fa-comments.fa-5x
+                                        h2.no-margins 230,322
+                                        small 昨日单量
+                                        br
+                                        small 20160124
+                            div.col-sm-4
+                                ul.stat-list
+                                    li.login-lists
+                                        i.fa.fa-trophy.fa-5x
+                                        h2.no-margins 230,322
+                                        small 近一周单量
+                                        br
+                                        small 20160118至20160124
+                            div.col-sm-4
+                                ul.stat-list
+                                    li.login-listss
+                                        i.fa.fa-shopping-cart.fa-5x
+                                        h2.no-margins 230,322
+                                        small 近一月单量
+                                        br
+                                        small 20151224至20160124
+                        div.row
+                            div.col-sm-6
+                                h4 类别前十名
+                                div.portlet-body#category_ranking
+                            div.col-sm-6
+                                h4 商家前十名
+
+                        div.login-situatio
+                            ul.nav.nav-tabs(role="tablist")
+                                li(role="presentation" class="active").login-ranking
+                                    a(href="#business" aria-controls="business" role="tab" data-toggle="tab")
+                                        |商家排行榜
+                                li(role="presentation").login-ranking
+                                    a(href="#Singlerise" aria-controls="Singlerise" role="tab" data-toggle="tab") 
+                                        |单量连续上涨商家
+                                li(role="presentation").login-ranking
+                                    a(href="#Singledrop" aria-controls="Singledrop" role="tab" data-toggle="tab")
+                                        |单量连续下跌商家
+                            div.tab-content
+                                div(role="tabpanel").tab-pane.active#business
+                                    div.table-responsive
+                                        table.table.table-striped
+                                            tr
+                                                td
+                                                    |商家
+                                                td
+                                                    |01/24
+                                                td
+                                                    |总计
+                                                td
+                                                    |平均值
+                                            tr
+                                                td
+                                                    |拼好货
+                                                td
+                                                    |32131
+                                                td
+                                                    |442573
+                                                td
+                                                    |14752
+                                            tr
+                                                td
+                                                    |拼好货
+                                                td
+                                                    |32131
+                                                td
+                                                    |442573
+                                                td
+                                                    |14752
+                                            tr
+                                                td
+                                                    |拼好货
+                                                td
+                                                    |32131
+                                                td
+                                                    |442573
+                                                td
+                                                    |14752
+                                            tr
+                                                td
+                                                    |拼好货
+                                                td
+                                                    |32131
+                                                td
+                                                    |442573
+                                                td
+                                                    |14752
+                                            tr
+                                                td
+                                                    |拼好货
+                                                td
+                                                    |32131
+                                                td
+                                                    |442573
+                                                td
+                                                    |14752
+                                div(role="tabpanel").tab-pane#Singlerise
+                                    div.table-responsive
+                                        table.table.table-striped
+                                            tr
+                                                td
+                                                    |商家
+                                                td
+                                                    |上月平均值
+                                                td
+                                                    |本月平均值
+                                                td
+                                                    |涨幅
+                                                td
+                                                    |本月累计单量
+                                            tr
+                                                td
+                                                    |飞牛网(胶州)
+                                                td
+                                                    |0
+                                                td
+                                                    |456
+                                                td
+                                                    |99.0%
+                                                td
+                                                    |11322
+                                            tr
+                                                td
+                                                    |飞牛网(胶州)
+                                                td
+                                                    |0
+                                                td
+                                                    |456
+                                                td
+                                                    |99.0%
+                                                td
+                                                    |11322
+                                            tr
+                                                td
+                                                    |飞牛网(胶州)
+                                                td
+                                                    |0
+                                                td
+                                                    |456
+                                                td
+                                                    |99.0%
+                                                td
+                                                    |11322
+                                            tr
+                                                td
+                                                    |飞牛网(胶州)
+                                                td
+                                                    |0
+                                                td
+                                                    |456
+                                                td
+                                                    |99.0%
+                                                td
+                                                    |11322
+                                            tr
+                                                td
+                                                    |飞牛网(胶州)
+                                                td
+                                                    |0
+                                                td
+                                                    |456
+                                                td
+                                                    |99.0%
+                                                td
+                                                    |11322
+                                div(role="tabpanel").tab-pane#Singledrop
+                                     div.table-responsive
+                                        table.table.table-striped
+                                            tr
+                                                td
+                                                    |商家
+                                                td
+                                                    |上月平均值
+                                                td
+                                                    |本月平均值
+                                                td
+                                                    |涨幅
+                                                td
+                                                    |本月累计单量
+                                            tr
+                                                td
+                                                    |北京红马传媒文化发展有限公司广州分公司
+                                                td
+                                                    |55
+                                                td
+                                                    |16
+                                                td
+                                                    |-237.0%
+                                                td
+                                                    |408 
+                                            tr
+                                                td
+                                                    |北京红马传媒文化发展有限公司广州分公司
+                                                td
+                                                    |55
+                                                td
+                                                    |16
+                                                td
+                                                    |-237.0%
+                                                td
+                                                    |408 
+                                            tr
+                                                td
+                                                    |北京红马传媒文化发展有限公司广州分公司
+                                                td
+                                                    |55
+                                                td
+                                                    |16
+                                                td
+                                                    |-237.0%
+                                                td
+                                                    |408 
+                                            tr
+                                                td
+                                                    |北京红马传媒文化发展有限公司广州分公司
+                                                td
+                                                    |55
+                                                td
+                                                    |16
+                                                td
+                                                    |-237.0%
+                                                td
+                                                    |408 
+                                            tr
+                                                td
+                                                    |北京红马传媒文化发展有限公司广州分公司
+                                                td
+                                                    |55
+                                                td
+                                                    |16
+                                                td
+                                                    |-237.0%
+                                                td
+                                                    |408                               

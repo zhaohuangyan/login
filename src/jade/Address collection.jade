@@ -1,0 +1,33 @@
+extends templates/pms
+
+block vars
+
+block title
+  |地址收集
+
+block styles
+
+block content
+    body.gray-bg.login-bj
+        h3.login-address 地址库地址收集
+        hr
+        form.form-inline
+            div.form-group
+                label(for="exampleInputName2")分配站点
+                input(type="text" class="form-control").login-shuru
+                &nbsp;&nbsp;
+                i.fa.fa-search
+                &nbsp;&nbsp;
+                label(for="exampleInputName2")创建时间
+                input(type="date" class="form-control").login-shuru
+                &nbsp;&nbsp;-&nbsp;&nbsp;
+                input(type="date" class="form-control").login-shuru
+                &nbsp;&nbsp;
+                button(type="button" class="btn btn-default login-btn")查询
+                &nbsp;&nbsp;
+                button(type="button" class="btn btn-default login-btn")导出
+        form.form-inline.login-top
+            div.form-group
+                button(type="button" class="btn btn-default login-btn")站点地址库过滤
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(type="button" class="btn btn-default login-btn")保存到地址库

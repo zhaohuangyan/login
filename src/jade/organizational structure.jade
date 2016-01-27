@@ -1,0 +1,49 @@
+extends templates/pms
+
+block vars
+
+block title
+  | 组织架构维护
+
+block styles
+
+block content
+    body.gray-bg.login-bj
+        div.wrapper.wrapper-content.animated.fadeInRight
+            div.row.border-bottom.white-bg.dashboard-header.login-business
+                button(type="button" class="btn btn-primary")
+                    |增加部门
+                button(type="button" class="btn btn-primary")
+                    |导出部门组织结构
+                div.table-responsive.login-information
+                    table.table.table-bordered.table-striped
+                        tr
+                            th
+                                input(type="checkbox")
+                            th
+                                |ID 
+                            th
+                                |部门名称
+                            th
+                                |业务系统对接ID
+                            th
+                                |财务ID
+                            th
+                                |财务名称
+                            th
+                                |操作
+                        tr
+                            th
+                                input(type="checkbox")
+                            th
+                                |ID 
+                            th
+                                |部门名称
+                            th
+                                |业务系统对接ID
+                            th
+                                |财务ID
+                            th
+                                |财务名称
+                            th
+                                |操作

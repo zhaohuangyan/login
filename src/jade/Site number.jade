@@ -1,0 +1,171 @@
+extends templates/pms
+
+block vars
+
+block title
+  |站点编号维护
+
+block styles
+
+block content
+    body.login-bjs
+        h2.login-address 地址分析
+            small (配送商编号维护查询)
+        hr
+        form.form-inline
+            lable 省&nbsp;&nbsp;&nbsp;&nbsp;份:
+            select.login-layoutss
+                option 请选择
+            lable 城&nbsp;&nbsp;&nbsp;&nbsp;市:
+            select.login-layoutss
+                option 请选择
+            lable  站&nbsp;&nbsp;&nbsp;&nbsp;点
+            select.login-layoutss
+                option 请选择  
+            lable 站点编号
+            input(type="text" class="form-control login-shuru")
+        form.form-inline
+            div.form-group
+                input(type="checkbox")
+                &nbsp;
+                |已维护
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                input(type="checkbox")
+                &nbsp;
+                |未维护
+        form.form-inline.login-top
+            button(type="button").btn.btn-default.login-btn 查询
+        form.form-inline.login-top
+            div.form-group
+                批量维护站点编号：
+                a(href="")  下载批量维护模板
+                div.input-group
+                    div.input-group-addon.login-choice  选择文件
+                    input.login-select(type="text" class="form-control" placeholder="未选择任何文件")
+                button(type="button" class="btn btn-default login-btn")批量导入(I)
+        div.table-responsive.login-top
+            table.table.table-bordered
+                tr.active
+                    td
+                        input(type="checkbox")
+                    td
+                        |修改
+                    td
+                        a(href="") 序号
+                    td
+                        a(href="") 省份
+                    td
+                        a(href="") 城市
+                    td
+                        a(href="") 站点
+                    td
+                        a(href="") 站点编号 
+                    td
+                        a(href="") 最后维护人
+                    td
+                        a(href="") 最后维护时间
+                    td
+                        a(href="") 所属配送商
+                tr
+                    td
+                        input(type="checkbox")
+                    td
+                        a(href="") 修改
+                    td
+                        |4513
+                    td
+                        |山东
+                    td
+                        | 青岛市
+                    td
+                        |山东项目暂留站
+                    td
+                        |A90
+                    td
+                        |最后维护人
+                    td
+                        |2015/9/10 10:47:19
+                    td
+                        |如风达快递有限公司
+                tr
+                    td
+                        input(type="checkbox")
+                    td
+                        a(href="") 修改
+                    td
+                        |4513
+                    td
+                        |山东
+                    td
+                        | 青岛市
+                    td
+                        |山东项目暂留站
+                    td
+                        |A90
+                    td
+                        |最后维护人
+                    td
+                        |2015/9/10 10:47:19
+                    td
+                        |如风达快递有限公司
+                tr
+                    td
+                        input(type="checkbox")
+                    td
+                        a(href="") 修改
+                    td
+                        |4513
+                    td
+                        |山东
+                    td
+                        | 青岛市
+                    td
+                        |山东项目暂留站
+                    td
+                        |A90
+                    td
+                        |最后维护人
+                    td
+                        |2015/9/10 10:47:19
+                    td
+                        |如风达快递有限公司
+                tr
+                    td
+                        input(type="checkbox")
+                    td
+                        a(href="") 修改
+                    td
+                        |4513
+                    td
+                        |山东
+                    td
+                        | 青岛市
+                    td
+                        |山东项目暂留站
+                    td
+                        |A90
+                    td
+                        |最后维护人
+                    td
+                        |2015/9/10 10:47:19
+                    td
+                        |如风达快递有限公司
+        div.col-sm-6
+            span
+                共找到1646条记录
+        div.col-sm-6.login-Page
+            span.login-numbers
+                首页
+            span.login-numbers
+                前页
+            span.login-numberss
+                |1
+            span.login-numbers
+                后页
+            span.login-numbers
+                尾页
+            span
+                转到第
+                select
+                    option 1
+                |页 

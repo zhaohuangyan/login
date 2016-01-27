@@ -1,0 +1,28 @@
+extends templates/pms
+
+block vars
+
+block title
+  |合作配送商
+
+block styles
+
+block content
+    body.login-bjs
+        div.col-sm-12.login-Page
+            a(href="") 帮助
+        hr
+        h3 如风达快递有限公司
+        form.form-inline
+            div.form-group
+                input(type="radio" name="optionsRadios")
+                |已设置
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                input(type="radio" name="optionsRadios")
+                |未设置
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(type="button").btn.btn-default.login-btn 查询
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(type="button").btn.btn-default.login-btn 设置
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                button(type="button").btn.btn-default.login-btn 停用
